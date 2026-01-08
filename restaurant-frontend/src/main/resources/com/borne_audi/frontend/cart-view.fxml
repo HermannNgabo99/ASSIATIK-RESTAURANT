@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.borne_audi.frontend.CartController"
+            stylesheets="@app.css"
+            styleClass="kioskBg">
+
+    <!-- TOP BAR -->
+    <top>
+        <HBox spacing="12" alignment="CENTER_LEFT" styleClass="topbar2">
+            <padding>
+                <Insets top="16" right="16" bottom="16" left="16"/>
+            </padding>
+
+            <!-- Retour -->
+            <Button text="← Modifier"
+                    onAction="#onBack"
+                    styleClass="btnGhost"/>
+
+            <Label text="Récapitulatif de commande"
+                   styleClass="pageTitle"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <!-- Sauvegarde / Reutilisation -->
+            <Button text="⭐ Enregistrer recommandé"
+                    onAction="#onSaveRecommended"
+                    styleClass="btnGhost"/>
+
+            <Button text="⭐ Charger recommandé"
+                    onAction="#onLoadRecommended"
+                    styleClass="btnGhost"/>
+        </HBox>
+    </top>
+
+    <!-- CONTENT -->
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="14">
+            <padding>
+                <Insets top="18" right="18" bottom="18" left="18"/>
+            </padding>
+
+            <VBox styleClass="kioskCard" spacing="12" maxWidth="980">
+                <padding>
+                    <Insets top="18" right="18" bottom="18" left="18"/>
+                </padding>
+
+                <!-- Liste panier -->
+                <ListView fx:id="cartList" prefHeight="520"/>
+
+                <!-- Total -->
+                <HBox alignment="CENTER_LEFT">
+                    <Label text="TOTAL" styleClass="totalLabel"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Label fx:id="totalLabel" text="0,00 €" styleClass="totalValue"/>
+                </HBox>
+
+                <!-- Statut -->
+                <Label fx:id="statusLabel" text="" styleClass="muted"/>
+
+                <!-- Actions -->
+                <HBox spacing="12">
+                    <Button fx:id="validateButton"
+                            text="Confirmer"
+                            onAction="#onValidate"
+                            styleClass="btnPrimary"
+                            HBox.hgrow="ALWAYS"/>
+
+                    <Button fx:id="payButton"
+                            text="Payer"
+                            onAction="#onPay"
+                            styleClass="btnPay"
+                            HBox.hgrow="ALWAYS"/>
+                </HBox>
+
+                <Label text="Un numéro de commande sera attribué après confirmation."
+                       styleClass="muted"/>
+            </VBox>
+        </VBox>
+    </center>
+
+</BorderPane>

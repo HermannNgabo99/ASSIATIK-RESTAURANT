@@ -1,0 +1,337 @@
+[ {
+  "id" : "fbfd8321-4b2b-4dc8-b62b-efb7b50bc36c",
+  "orderNumber" : "ORD-0006",
+  "status" : "CREATED",
+  "totalCents" : 1880,
+  "createdAt" : "2026-01-07T15:56:08.083672Z",
+  "items" : [ {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  } ]
+}, {
+  "id" : "135e53de-cc67-4d68-b33b-c41448a6cff8",
+  "orderNumber" : "ORD-0022",
+  "status" : "PAID",
+  "totalCents" : 1240,
+  "createdAt" : "2026-01-08T17:23:54.047529Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  } ]
+}, {
+  "id" : "f84bb12a-708c-4a45-b8d0-98198dbc070b",
+  "orderNumber" : "ORD-0007",
+  "status" : "CREATED",
+  "totalCents" : 1880,
+  "createdAt" : "2026-01-07T16:06:18.287640Z",
+  "items" : [ {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  } ]
+}, {
+  "id" : "bf1400cd-dafe-45fc-8ca8-399ede87e300",
+  "orderNumber" : "ORD-0014",
+  "status" : "PAID",
+  "totalCents" : 650,
+  "createdAt" : "2026-01-08T13:03:46.058297Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  } ]
+}, {
+  "id" : "2c18f349-7ae5-4e3a-b1b4-665c39540d5d",
+  "orderNumber" : "ORD-0010",
+  "status" : "CREATED",
+  "totalCents" : 1940,
+  "createdAt" : "2026-01-08T04:55:39.194402Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  }, {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  } ]
+}, {
+  "id" : "ca8c64ab-b3c6-449f-8c92-3ee774ce3428",
+  "orderNumber" : "ORD-0017",
+  "status" : "PAID",
+  "totalCents" : 1300,
+  "createdAt" : "2026-01-08T14:48:37.911392Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 2,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 1300
+  } ]
+}, {
+  "id" : "e0362470-78da-4c82-8999-3d17d16a88ea",
+  "orderNumber" : "ORD-0004",
+  "status" : "PAID",
+  "totalCents" : 1880,
+  "createdAt" : "2026-01-07T14:58:29.787230Z",
+  "items" : [ {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  }, {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  } ]
+}, {
+  "id" : "67ebbf34-7e51-43bf-9da7-f1684c5867fe",
+  "orderNumber" : "ORD-0005",
+  "status" : "CREATED",
+  "totalCents" : 1880,
+  "createdAt" : "2026-01-07T15:55:26.986325Z",
+  "items" : [ {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  } ]
+}, {
+  "id" : "4cbaf734-3859-43fd-90dd-a29272308175",
+  "orderNumber" : "ORD-0013",
+  "status" : "PAID",
+  "totalCents" : 650,
+  "createdAt" : "2026-01-08T13:01:36.557791Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  } ]
+}, {
+  "id" : "f878a13a-da18-46b1-890e-1c6d410e2b81",
+  "orderNumber" : "ORD-0001",
+  "status" : "CREATED",
+  "totalCents" : 650,
+  "createdAt" : "2026-01-07T07:56:23.728462Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  } ]
+}, {
+  "id" : "a38048e1-bdda-43fa-8cde-b118c20dff8a",
+  "orderNumber" : "ORD-0019",
+  "status" : "PAID",
+  "totalCents" : 1890,
+  "createdAt" : "2026-01-08T16:35:01.818558Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 2,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 1300
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  } ]
+}, {
+  "id" : "706bea76-581a-428d-b318-24ac156039b8",
+  "orderNumber" : "ORD-0015",
+  "status" : "PAID",
+  "totalCents" : 650,
+  "createdAt" : "2026-01-08T13:21:27.915457Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  } ]
+}, {
+  "id" : "883b6298-8fbd-4831-b2b4-9c7dafb93a4f",
+  "orderNumber" : "ORD-0018",
+  "status" : "PAID",
+  "totalCents" : 650,
+  "createdAt" : "2026-01-08T16:22:18.919076Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  } ]
+}, {
+  "id" : "55932b9c-8bfd-4d72-b689-cebf37785794",
+  "orderNumber" : "ORD-0008",
+  "status" : "CREATED",
+  "totalCents" : 1880,
+  "createdAt" : "2026-01-07T16:29:04.210271Z",
+  "items" : [ {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  } ]
+}, {
+  "id" : "59fba580-5bd9-4285-86b0-78bc06e600e3",
+  "orderNumber" : "ORD-0009",
+  "status" : "CREATED",
+  "totalCents" : 1290,
+  "createdAt" : "2026-01-07T17:05:28.415049Z",
+  "items" : [ {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  } ]
+}, {
+  "id" : "821b1ad8-90ec-4970-aef1-5b0c1bdfdb87",
+  "orderNumber" : "ORD-0003",
+  "status" : "PAID",
+  "totalCents" : 1290,
+  "createdAt" : "2026-01-07T13:13:56.713289Z",
+  "items" : [ {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  } ]
+}, {
+  "id" : "cdeeea11-318c-424c-8f2b-4707a6d965e8",
+  "orderNumber" : "ORD-0012",
+  "status" : "CREATED",
+  "totalCents" : 650,
+  "createdAt" : "2026-01-08T13:00:24.552351Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  } ]
+}, {
+  "id" : "bc20cb13-4e06-47dd-ae3a-97a48358589f",
+  "orderNumber" : "ORD-0020",
+  "status" : "PAID",
+  "totalCents" : 3180,
+  "createdAt" : "2026-01-08T16:36:12.279616Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 2,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 1300
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  }, {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  } ]
+}, {
+  "id" : "b1b9484c-c1c9-4a93-9117-97d09ac4dfcf",
+  "orderNumber" : "ORD-0023",
+  "status" : "PAID",
+  "totalCents" : 1240,
+  "createdAt" : "2026-01-08T18:16:36.191403Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  } ]
+}, {
+  "id" : "934a2251-86cb-42d0-9c5d-71aac4ab220d",
+  "orderNumber" : "ORD-0021",
+  "status" : "PAID",
+  "totalCents" : 2540,
+  "createdAt" : "2026-01-08T16:38:03.300302Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 3,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 1950
+  }, {
+    "dishId" : 301,
+    "quantity" : 1,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 590
+  } ]
+}, {
+  "id" : "f31af4b1-bd5a-45f0-bdbf-71a07376baa1",
+  "orderNumber" : "ORD-0002",
+  "status" : "CREATED",
+  "totalCents" : 1290,
+  "createdAt" : "2026-01-07T12:55:26.370350Z",
+  "items" : [ {
+    "dishId" : 201,
+    "quantity" : 1,
+    "unitPriceCents" : 1290,
+    "lineTotalCents" : 1290
+  } ]
+}, {
+  "id" : "05a293fe-98c5-4b91-9eed-38cad0f05477",
+  "orderNumber" : "ORD-0016",
+  "status" : "PAID",
+  "totalCents" : 650,
+  "createdAt" : "2026-01-08T13:44:53.065614Z",
+  "items" : [ {
+    "dishId" : 101,
+    "quantity" : 1,
+    "unitPriceCents" : 650,
+    "lineTotalCents" : 650
+  } ]
+}, {
+  "id" : "5580b503-fdff-4f0c-bcf9-4fdd30b9e8a9",
+  "orderNumber" : "ORD-0011",
+  "status" : "PAID",
+  "totalCents" : 1180,
+  "createdAt" : "2026-01-08T13:00:08.488673Z",
+  "items" : [ {
+    "dishId" : 301,
+    "quantity" : 2,
+    "unitPriceCents" : 590,
+    "lineTotalCents" : 1180
+  } ]
+} ]

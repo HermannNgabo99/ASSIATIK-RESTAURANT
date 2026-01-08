@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.borne_audi.frontend.ConfirmationController"
+            stylesheets="@app.css"
+            styleClass="kiosk-bg">
+
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="18">
+            <padding>
+                <Insets top="34" right="34" bottom="34" left="34"/>
+            </padding>
+
+            <Label text="Confirmation" styleClass="brand"/>
+
+            <Label text="✓" styleClass="successIcon"/>
+
+            <Label text="Merci ! Votre paiement a été enregistré." styleClass="subtitle"/>
+
+            <Label fx:id="orderNumberLabel" text="Commande N° -" styleClass="bigOrder"/>
+
+            <!-- Affichage PAID / en attente -->
+            <Label fx:id="paidLabel" text="" styleClass="paidBadge"/>
+
+            <VBox styleClass="card" spacing="14" maxWidth="1000">
+                <padding>
+                    <Insets top="22" right="22" bottom="22" left="22"/>
+                </padding>
+
+                <HBox alignment="CENTER_LEFT">
+                    <Label text="Récapitulatif" styleClass="sectionTitle"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Label fx:id="orderIdLabel" text="ID: -" styleClass="muted"/>
+                </HBox>
+
+                <VBox fx:id="itemsBox" spacing="10"/>
+
+                <HBox alignment="CENTER_LEFT" styleClass="separator"/>
+
+                <HBox alignment="CENTER_LEFT">
+                    <Label text="Total" styleClass="totalLabel"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Label fx:id="totalLabel" text="0,00 €" styleClass="totalValue"/>
+                </HBox>
+            </VBox>
+
+            <Button text="Nouvelle commande"
+                    onAction="#onNewOrder"
+                    styleClass="kioskPrimary"
+                    prefWidth="420"
+                    prefHeight="72"/>
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.borne_audi.frontend.DetailController"
+            stylesheets="@app.css"
+            styleClass="bg-amber">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="14" styleClass="topbar">
+            <padding>
+                <Insets top="18" right="24" bottom="18" left="24"/>
+            </padding>
+
+            <Button text="← Retour"
+                    onAction="#onBack"
+                    styleClass="ghost-button"
+                    prefHeight="48"
+                    prefWidth="160"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <Label text="Détail du plat" styleClass="brand"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="18">
+            <padding>
+                <Insets top="24" right="24" bottom="24" left="24"/>
+            </padding>
+
+            <VBox spacing="14" styleClass="sketch-card" maxWidth="900">
+                <padding>
+                    <Insets top="22" right="22" bottom="22" left="22"/>
+                </padding>
+
+                <!-- ✅ IMAGE -->
+                <ImageView fx:id="dishImage"
+                           fitWidth="820"
+                           fitHeight="320"
+                           preserveRatio="true"
+                           smooth="true"/>
+
+                <Label fx:id="nameLabel" text="Nom du plat" styleClass="detailTitle"/>
+                <Label fx:id="descLabel" text="Description..." wrapText="true" styleClass="muted"/>
+
+                <HBox alignment="CENTER_LEFT">
+                    <Label text="Prix" styleClass="sectionTitle"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Label fx:id="priceLabel" text="0,00 €" styleClass="totalValue"/>
+                </HBox>
+
+                <HBox alignment="CENTER" spacing="14" styleClass="detailQtyBar">
+                    <Button text="–" onAction="#onMinus" styleClass="ghost-button" prefWidth="90" prefHeight="64"/>
+                    <Label fx:id="qtyLabel" text="1" styleClass="qtyNumber"/>
+                    <Button text="+" onAction="#onPlus" styleClass="ghost-button" prefWidth="90" prefHeight="64"/>
+                </HBox>
+
+                <Button fx:id="addButton"
+                        text="Ajouter au panier"
+                        onAction="#onAddToCart"
+                        styleClass="cta-button"
+                        prefHeight="80"
+                        maxWidth="Infinity"/>
+
+                <Label fx:id="infoLabel" text="" styleClass="muted"/>
+            </VBox>
+        </VBox>
+    </center>
+
+</BorderPane>

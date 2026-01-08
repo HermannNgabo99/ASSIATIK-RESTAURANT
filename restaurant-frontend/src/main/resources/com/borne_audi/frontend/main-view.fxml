@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.borne_audi.frontend.MenuController"
+            style="-fx-background-color: #f6f7fb;">
+
+    <!-- TOP BAR -->
+    <top>
+        <VBox spacing="10" style="-fx-background-color: white; -fx-border-color:#e5e7eb; -fx-border-width:0 0 1 0;">
+            <padding>
+                <Insets top="16" right="18" bottom="14" left="18"/>
+            </padding>
+
+            <HBox alignment="CENTER_LEFT" spacing="12">
+                <Button text="← Accueil" onAction="#onBackHome"
+                        style="-fx-font-size:14px; -fx-font-weight:800; -fx-background-radius:10; -fx-padding:10 14;"/>
+
+                <Label text="Menu" style="-fx-font-size:28px; -fx-font-weight:900; -fx-text-fill:#111827;"/>
+
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <Button text="Charger les catégories" onAction="#onLoadCategories"
+                        style="-fx-font-size:14px; -fx-font-weight:800; -fx-background-radius:10; -fx-padding:10 14;"/>
+
+                <Button fx:id="cartButton" text="🛒 Panier (0,00 €)" onAction="#onOpenCart"
+                        style="-fx-font-size:14px; -fx-font-weight:900; -fx-background-radius:10; -fx-padding:10 14;"/>
+            </HBox>
+
+            <Label fx:id="statusLabel" text="" style="-fx-text-fill:#6b7280;"/>
+        </VBox>
+    </top>
+
+    <!-- LEFT : Categories -->
+    <left>
+        <VBox spacing="10" prefWidth="260"
+              style="-fx-background-color:white; -fx-border-color:#e5e7eb; -fx-border-width:0 1 0 0;">
+            <padding>
+                <Insets top="16" right="12" bottom="16" left="12"/>
+            </padding>
+
+            <Label text="Catégories" style="-fx-font-size:16px; -fx-font-weight:900; -fx-text-fill:#111827;"/>
+            <ListView fx:id="categoriesList" prefHeight="650"/>
+        </VBox>
+    </left>
+
+    <!-- CENTER : Dish cards -->
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="16" right="16" bottom="16" left="16"/>
+            </padding>
+
+            <Label fx:id="dishesTitle" text="Plats"
+                   style="-fx-font-size:18px; -fx-font-weight:900; -fx-text-fill:#111827;"/>
+
+            <ScrollPane fitToWidth="true" style="-fx-background:#f6f7fb; -fx-background-color:transparent;">
+                <content>
+                    <TilePane fx:id="dishesTile"
+                              prefColumns="2"
+                              hgap="14"
+                              vgap="14"
+                              style="-fx-background-color:transparent;">
+                        <padding>
+                            <Insets top="10" right="10" bottom="10" left="10"/>
+                        </padding>
+                    </TilePane>
+                </content>
+            </ScrollPane>
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.borne_audi.frontend.MenuController"
+            stylesheets="@app.css"
+            styleClass="kioskBg">
+
+    <top>
+        <HBox spacing="12" alignment="CENTER_LEFT" styleClass="topbar2">
+            <padding><Insets top="16" right="18" bottom="16" left="18"/></padding>
+
+            <Button text="← Accueil" onAction="#onBackHome" styleClass="btnGhost"/>
+            <Label text="Menu" styleClass="pageTitle"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <Button text="⭐ Recommandé" onAction="#onRecommended" styleClass="btnGhost"/>
+            <Button text="Charger" onAction="#onLoadCategories" styleClass="btnGhost"/>
+            <Button fx:id="cartButton" text="🛒 Panier (0,00 €)" onAction="#onOpenCart" styleClass="btnPrimary"/>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox spacing="10" prefWidth="260" styleClass="sidePanel">
+            <padding><Insets top="16" right="12" bottom="16" left="12"/></padding>
+            <Label text="Catégories" styleClass="sectionTitle"/>
+            <ListView fx:id="categoriesList" prefHeight="650"/>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="10">
+            <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+
+            <Label fx:id="dishesTitle" text="Plats" styleClass="sectionTitle"/>
+            <Label fx:id="statusLabel" text="" styleClass="muted"/>
+
+            <ScrollPane fitToWidth="true" style="-fx-background-color:transparent;">
+                <content>
+                    <TilePane fx:id="dishesTile"
+                              prefColumns="2"
+                              hgap="14" vgap="14"
+                              style="-fx-background-color:transparent;">
+                        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+                    </TilePane>
+                </content>
+            </ScrollPane>
+        </VBox>
+    </center>
+
+</BorderPane>
