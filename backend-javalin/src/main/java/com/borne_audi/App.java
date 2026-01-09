@@ -23,12 +23,23 @@ public class App {
 
     public static void main(String[] args) {
 
+        // ==========================================
+        // 1. DÉMARRAGE DE LA BASE DE DONNÉES
+        // ==========================================
+        // C'est ici que la magie opère pour ton prof :
+        try {
+            Database.connect();
+        } catch (Exception e) {
+            System.err.println("Attention: La base de données n'a pas pu démarrer (vérifie init_db.sql).");
+            e.printStackTrace();
+        }
+
         int port = 9090;
 
         // Jackson (déjà dans ton projet via dependencies)
         ObjectMapper mapper = new ObjectMapper().findAndRegisterModules();
 
-        // ===== Seed data =====
+        // ===== Seed data (Données en dur pour l'instant) =====
         List<Category> categories = List.of(
                 new Category(1, "Entrees"),
                 new Category(2, "Plats"),
